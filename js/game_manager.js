@@ -50,10 +50,6 @@ GameManager.prototype.restart = function () {
   document.getElementById("timer256").innerHTML = "";
   document.getElementById("timer512").innerHTML = "";
   document.getElementById("timer1024").innerHTML = "";
-  document.getElementById("timer2048").innerHTML = "";
-  document.getElementById("timer4096").innerHTML = "";
-  document.getElementById("timer8192").innerHTML = "";
-  document.getElementById("timer12384").innerHTML = "";
 
 };
 
@@ -230,18 +226,6 @@ GameManager.prototype.move = function (direction) {
           }
           if (merged.value === 1024  &&  document.getElementById("timer1024").innerHTML === ""){
             document.getElementById("timer1024").innerHTML = pretty(time);
-          }
-          if (merged.value === 2048  &&  document.getElementById("timer2048").innerHTML === ""){
-            document.getElementById("timer2048").innerHTML = pretty(time);
-          }
-          if (merged.value === 4096  &&  document.getElementById("timer4096").innerHTML === ""){
-            document.getElementById("timer4096").innerHTML = pretty(time);
-          }
-          if (merged.value === 8192  &&  document.getElementById("timer8192").innerHTML === ""){
-            document.getElementById("timer8192").innerHTML = pretty(time);
-          }
-          if (merged.value === 16384  &&  document.getElementById("timer16384").innerHTML === ""){
-            document.getElementById("timer16384").innerHTML = pretty(time);
           }
 
         } else {
