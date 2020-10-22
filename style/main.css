@@ -162,7 +162,7 @@ hr {
   float: left;
 }
 .container {
-  width: 562.5px;
+  width: 750px;
   margin: 0 auto; }
 
 @-webkit-keyframes fade-in {
@@ -207,7 +207,7 @@ hr {
   .game-container .game-message {
     display: none;
     position: absolute;
-    top: -100px;
+    top: 0;
     right: 0;
     bottom: 0;
     left: 0;
