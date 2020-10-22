@@ -222,6 +222,7 @@ GameManager.prototype.move = function (direction) {
             document.getElementById("timer128").innerHTML = pretty(time);
           }
           if (merged.value === 256  &&  document.getElementById("timer256").innerHTML === ""){
+                        self.won = true;
             document.getElementById("timer256").innerHTML = pretty(time);
           }
           if (merged.value === 512  &&  document.getElementById("timer512").innerHTML === ""){
@@ -231,7 +232,6 @@ GameManager.prototype.move = function (direction) {
             document.getElementById("timer1024").innerHTML = pretty(time);
           }
           if (merged.value === 2048  &&  document.getElementById("timer2048").innerHTML === ""){
-            self.won = true;
             document.getElementById("timer2048").innerHTML = pretty(time);
           }
           if (merged.value === 4096  &&  document.getElementById("timer4096").innerHTML === ""){
