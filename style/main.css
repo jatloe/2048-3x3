@@ -136,23 +136,6 @@ h1.title {
   margin-top: 9px;
 }
 
-.timerblank{
-  box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0);
-  border-radius: 3px;
-  text-align: center;
-  font-weight: bold;
-  z-index: 10;
-  width: 42px;
-  height: 42px;
-  line-height: 42px;
-  color: #faf8ef;
-  background: #faf8ef;
-  font-family: 'Clear Sans';
-  float:left;
-  margin-left:15px;
-  margin-top: 9px;
-}
-
 p {
   margin-top: 0px;
   margin-bottom: 10px;
