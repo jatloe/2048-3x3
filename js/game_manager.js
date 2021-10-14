@@ -93,6 +93,7 @@ GameManager.prototype.setup = function () {
     this.addStartTiles();
   }
   
+    this.timerStatus = 0;
     clearInterval(this.timerID);
 
   // Update the actuator
