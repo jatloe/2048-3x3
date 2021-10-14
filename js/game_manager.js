@@ -95,9 +95,6 @@ GameManager.prototype.setup = function () {
   
     clearInterval(this.timerID);
 
-    // Add the initial tiles
-    this.addStartTiles();
-
   // Update the actuator
   this.actuate();
 };
