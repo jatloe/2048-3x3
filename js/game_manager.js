@@ -75,12 +75,24 @@ GameManager.prototype.setup = function () {
 
   // Reload the game from a previous game if present
   
+  if (previousState) {
+    this.grid        = new Grid(previousState.grid.size,
+                                previousState.grid.cells); // Reload grid
+    this.score       = previousState.score;
+    this.over        = previousState.over;
+    this.won         = previousState.won;
+    this.keepPlaying = previousState.keepPlaying;
+  } else {
     this.grid        = new Grid(this.size);
     this.score       = 0;
     this.over        = false;
     this.won         = false;
     this.keepPlaying = false;
-    this.timerStatus = 0;
+
+    // Add the initial tiles
+    this.addStartTiles();
+  }
+  
     clearInterval(this.timerID);
 
     // Add the initial tiles
