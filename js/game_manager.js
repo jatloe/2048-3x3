@@ -228,7 +228,8 @@ GameManager.prototype.move = function (direction) {
             document.getElementById("timer128").innerHTML = pretty(time);
           }
           if (merged.value === 256  &&  document.getElementById("timer256").innerHTML === ""){
-                        self.won = true;
+            if (new URLSearchParams(window.location.search).get('nowin') !== null)
+              self.won = true;
             document.getElementById("timer256").innerHTML = pretty(time);
           }
           if (merged.value === 512  &&  document.getElementById("timer512").innerHTML === ""){
